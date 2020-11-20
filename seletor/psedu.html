@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*순서대로~입력해주는게 좋다.*/
+      a:link {
+        text-decoration: steelblue;
+        color: blue;
+        outline: none; /*탭으로 움직일시 테두리가 보인다.*/
+      }
+      a:hover {
+        /*올리면 변화*/
+        color: rgb(206, 141, 0);
+      }
+      a:active {
+        /*누르면 변화*/
+        background-color: rgb(64, 202, 202);
+        color: beige;
+      }
+      a:visited {
+        color: silver;
+      }
+      h1:hover {
+        text-decoration: underline;
+      }
+      input {
+        width: 150;
+        outline: none;
+        border: 1px solid rgb(0, 34, 68);
+        transition: 0.4s;
+        padding: 5px 10px;
+      }
+      input:focus {
+        background-color: rgb(0, 56, 27);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>css 기본 문법</h1>
+      <h2>가상 클래스 선택자</h2>
+      <ul>
+        <li><a href="" target="_blank">11st</a></li>
+        <li><a href="" target="_blank">Gmarket</a></li>
+        <li><a href="" target="_self">Danawa</a></li>
+      </ul>
+      <a href="mailto:ffff@mail.com">ffff@mail.com</a>
+      <input type="text" />
+    </div>
+  </body>
+</html>

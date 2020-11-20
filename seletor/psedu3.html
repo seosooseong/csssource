@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 요소 선택자</title>
+    <style>
+      /*순서대로~입력해주는게 좋다.*/
+      h1::before{
+        content: "before ";
+        color: lightgreen;
+      }
+      h1::after{
+        content: " after";
+        color: rgb(104, 62, 255);
+      }
+      h3::before{
+        content: ""; /*content무조건 필요*/
+        width: 10px;
+        height: 10px;
+        background-color:red;
+        display: inline-block;
+        margin-right: 10px; /*바깥쪽 여백*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">css 기본 문법</h1>
+    <h2>가상 요소 선택자</h2>
+    <h3>가상 요소 선택자 활용</h4>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*자손 선택자 : 부모태그(div) 자손태그(h2)*/
+        div > h2{ /* div > h2  >꺽새가 들어가면 자식 선택자*/
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2>자손(하위) 선택자</h2>
+    </div>
+    <div>
+      <h1>선택자</h1>
+      <nav>
+        <h2>자손(하위) 선택자</h>
+        <h2>자손(하위) 선택자</h>
+      </nav>
+    </div>
+  </body>
+</html>
