@@ -1,0 +1,9 @@
+.area p {
+  color: red;
+}
+p {
+  color: royalblue;
+}
+#text {
+  color: saddlebrown !important;
+}

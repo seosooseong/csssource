@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우선순위</title>
+    <link rel="stylesheet" href="mycss.css" />
+  </head>
+  <body>
+    <!-- 스타일 시트 우선순위
+          1. 명시적으로 점수가 높은 선언이 우선
+    (!important > 인라인 선언 > 아이디 선택자 > .클래스 선택자 > 태그 선택자 > 전체 > 상속 )
+         
+          2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선
+
+          ex? !imprtant : 1000점, 인라인선언 :500점, 아이디: 100점,
+              클래스: 10점, 태그(가상요소): 1점
+          .list li.item { color : red;}
+          .box::before (가상요소)
+          :not(.box){} - 10점     가로안에 있는거 기준으로 우선순위 / not은 무의미
+          :not(span){} -  1점
+          header .menu li:nth-child(2) {}
+        -->
+    <div class="area">
+      <p id="text" style="color: violet">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, possimus!
+        Ipsum et nam ad, aliquam dignissimos laboriosam molestias veritatis odit
+        exercitationem sequi sed dolore optio iste, in dolor amet eaque?
+      </p>
+    </div>
+  </body>
+</html>
