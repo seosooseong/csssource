@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        height: 500px;
+        margin: 20px auto;
+        flex-direction: row;
+        /*row 기본값*/
+      }
+      .container div {
+        width: 33.3%;
+      }
+      .container div:first-child {
+        background-color: coral;
+      }
+      .container div:nth-child(2) {
+        background-color: royalblue;
+      }
+      .container div:nth-child(3) {
+        background-color: green;
+      }
+      .container div:nth-child(4) {
+        background-color: mediumaquamarine;
+      }
+      .container div:last-child {
+        background-color: tan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+      <div>e</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*container너비는 500px 높이 300px 중앙에 배치, 배경 노란색*/
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: yellow;
+        position: relative;
+        /*absolute의 기준은 가장 가까운 태그 기준, relative(부모)*/
+
+        /* 1. 박스 너비 100px, 높이 100px */
+      }
+      .box {
+        /* width: 100px; */
+        height: 100px;
+        position: absolute;
+      }
+      /* 2.a 빨강, b 녹색 , c 파랑  */
+      .a {
+        background-color: red;
+        /*기준이 되는 요소가 고정값일때 사용.*/
+        /* right: 500px; */
+
+        /*기준이 되는 요소가 움직일때 % */
+        right: 100%;
+        top: 100px;
+      }
+      .b {
+        background-color: green;
+        right: 200px;
+        top: 100px;
+      }
+      .c {
+        background-color: blue;
+        /* left: 500px; */
+        left: 100%;
+        bottom: 100px;
+        /*top:100px;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaa</div>
+      <div class="box b">box bb</div>
+      <div class="box c">box c</div>
+    </div>
+  </body>
+</html>

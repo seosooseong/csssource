@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        background: #333;
+        overflow: hidden;
+      }
+
+      li {
+        list-style-type: none;
+        float: left;
+      }
+
+      li a {
+        padding: 14px 16px;
+        display: inline-block;
+        /*display: inline-block; - li에 주어진 공간 다 사용*/
+      }
+      li a:link {
+        text-decoration: none;
+        color: white;
+      }
+      li a:hover {
+        /*마우스 올리면*/
+        background-color: blueviolet;
+      }
+
+      li:first-child {
+        background-color: red;
+      }
+
+      /* .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <ul class="clearfix">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>

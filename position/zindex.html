@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index - position</title>
+    <style>
+      .box-group {
+        display: flex;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 4px dashed red;
+        border-radius: 10px;
+        font-size: 30px;
+        margin-right: -30px;
+      }
+      .box-group .box:nth-child(2n) {
+        margin-top: 30px;
+      }
+      .box3 {
+        position: relative;
+        z-index: 1;
+        /*z-index속성의 값이 높을 수록 위에 쌓임*/
+      }
+      .box4 {
+        position: relative;
+      }
+      .box5 {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 요소 쌓임 순서 : 요소가 쌓여 있는 순서를 통해 어떤 요소가
+        사용자와 가깝게 있는지 (더 위에 쌓이는지)를 결정(z축)
+
+        1.static을 제외한 position 속성의 값이 있는 경우 가장 위에 쌓임
+        2.position이 모두 존재한다면  z-index속성의 값이 높을 수록 위에 쌓임
+        3.position속성 값이 모두 있고, z-index속성의 값이 같다면 'html'마지막 코드인
+        경우 위에 쌓임(나중 작성)
+
+
+
+      -->
+    <div class="box-group">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+    </div>
+  </body>
+</html>
