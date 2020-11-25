@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexTest01</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "open sans";
+        background-color: #ecf0f1;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        /*가로로 펼치다*/
+        display: flex;
+      }
+      .flexbg main {
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        /*순서 2번*/
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: cornflowerblue;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: rgb(40, 55, 83);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          alias. Eaque tenetur, repellendus dignissimos quaerat distinctio ad
+          suscipit eum, ducimus aspernatur non magnam quidem repellat
+          consequuntur est ratione pariatur? Culpa! Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Fugiat, minima voluptatibus provident
+          veritatis beatae expedita necessitatibus placeat quam qui tenetur
+          libero deserunt quasi reiciendis, maiores, perspiciatis est iusto
+          doloremque illo?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          alias. Eaque tenetur, repellendus dignissimos quaerat distinctio ad
+          suscipit eum, ducimus aspernatur non magnam quidem repellat
+          consequuntur est ratione pariatur? Culpa! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Qui voluptate delectus ab explicabo eos
+          autem laboriosam necessitatibus cumque maxime beatae error voluptas,
+          officiis eligendi, fuga nisi quae minus veritatis consequuntur!
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </aside>
+    </div>
+  </body>
+</html>

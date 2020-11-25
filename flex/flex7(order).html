@@ -7,7 +7,7 @@
     <style>
       .container {
         display: flex;
-        height: 500px;
+        height: 100px;
         margin: 20px auto;
         flex-direction: row;
         border: 2px solid;
@@ -24,17 +24,17 @@
       .container div:first-child {
         order: 1;
       }
-      .container div:nth-child(2) {
+      /* .container div:nth-child(2) {
         background-color: royalblue;
-      }
+      } */
       .container div:nth-child(3) {
-        background-color: green;
+        order: 1;
       }
-      .container div:nth-child(4) {
+      /* .container div:nth-child(4) {
         background-color: mediumaquamarine;
-      }
+      } */
       .container div:last-child {
-        background-color: tan;
+        order: -1;
       }
     </style>
   </head>

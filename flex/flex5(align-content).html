@@ -7,22 +7,19 @@
     <style>
       .container {
         display: flex;
-        height: 500px;
-        margin: 20px auto;
-        flex-direction: row;
         border: 2px solid;
+        flex-wrap: wrap;
+        height: 400px;
+        align-content: space-around;
+        /*stretch(기본),*/
       }
       .container div {
-        width: 100px;
+        width: 200px;
         height: 100px;
         border: 3px dashed;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        background-color: tomato;
       }
       .container div:first-child {
-        order: 1;
+        background-color: coral;
       }
       .container div:nth-child(2) {
         background-color: royalblue;

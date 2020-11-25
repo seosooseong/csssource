@@ -7,44 +7,33 @@
     <style>
       .container {
         display: flex;
-        height: 500px;
-        margin: 20px auto;
-        flex-direction: row;
-        border: 2px solid;
+        flex-direction: row; /*row 기본값*/
+        border: 1px solid;
+        justify-content: space-around;
+        /*flex-start(기본값) / end(우측), 
+        space-evenly: 남은공간 /  space-around: 공간 나누고 가운데 / space-between: 처음과 끝 가운데 / */
       }
       .container div {
         width: 100px;
         height: 100px;
-        border: 3px dashed;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        background-color: tomato;
       }
       .container div:first-child {
-        order: 1;
+        background-color: coral;
       }
       .container div:nth-child(2) {
         background-color: royalblue;
       }
-      .container div:nth-child(3) {
-        background-color: green;
-      }
-      .container div:nth-child(4) {
-        background-color: mediumaquamarine;
-      }
+
       .container div:last-child {
-        background-color: tan;
+        background-color: yellowgreen;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div>a</div>
-      <div>b</div>
-      <div>c</div>
-      <div>d</div>
-      <div>e</div>
+      <div>flex-item</div>
+      <div>flex-item</div>
+      <div>flex-item</div>
     </div>
   </body>
 </html>
