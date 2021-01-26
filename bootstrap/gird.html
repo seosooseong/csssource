@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그리드1</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      body {
+        color: whitesmoke;
+      }
+      .container {
+        background-color: red;
+        margin-bottom: 20px;
+      }
+
+      /*^="col" col로 시작하는....*/
+      [class^="col"] {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">One of three columns</div>
+        <div class="col-sm">One of three columns</div>
+        <div class="col-sm">One of three columns</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-6">2 of 3 (wider)</div>
+        <div class="col">3 of 3</div>
+      </div>
+      <div class="row">
+        <!--col-12가 기준-->
+        <div class="col-6">1 of 3</div>
+        <div class="col-5">2 of 3 (wider)</div>
+        <div class="col">3 of 3</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">1 of 3</div>
+        <div class="col-md-auto">
+          Variable width contentVariable width contentVariable width content
+        </div>
+        <div class="col col-lg-2">3 of 3</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-md-auto">Variable width content</div>
+        <div class="col col-lg-2">3 of 3</div>
+      </div>
+    </div>
+  </body>
+</html>
